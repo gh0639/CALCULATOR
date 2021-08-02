@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(73, 251, 204, 0.83);
+}
+
+.calc-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height:690px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+ 
+}
+
+.calc-grid > button {
+  cursor: pointer;
+  font-size: 32px;
+  border: 1px solid rgb(106, 126, 128);
+  outline: none;
+  background-color: rgba(224, 222, 154, 0.75);
+  border-radius: 6px
+}
+.calc-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.span-two {
+  grid-column: span 2;
+}
+.result {
+  grid-column: 1/-1;
+  background-color: #486269;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 8px;
+}
+.result .prev-operand {
+  color: rgba(240, 233, 233, 0.857);
+  font-size: 22px;
+}
+.result .curr-operand {
+  color: #ffffff;
+  font-size: 35px;
+}
+#jvd{
+    background-color: rgb(240, 65, 65);
+    color:white;
+}
+
+#jvd:hover {
+    opacity: 0.9
+}
+#btn{
+    background-color: rgb(236, 165, 31); 
+}
+#btn:hover {
+    opacity: 0.8
+}
+.j1{
+    text-align:center;
+    margin-bottom:5px;
+}
